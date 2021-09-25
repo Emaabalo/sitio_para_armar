@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(1, 8, 8);
+     /* este color es para que mientras se carga la imagen de fondo no sea tan brusco elbamcio de colores */
+    background-image: url('images/pattern.jpg');
+}
+
+.cabecera,
+.contenedor{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contenedor{
+    background-color: white;
+    
+}
+
