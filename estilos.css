@@ -5,7 +5,17 @@
     --naranja: #F90;
     --negro: #000;
     --blanco: #FFF;
+    --amarillo: rgb(255, 217, 0);
 
+
+}
+
+/* reseteamos algunos valores predeterminados del navegador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing sirve para hacer mas controlable loselementos */
 }
 
 body{
@@ -47,5 +57,38 @@ body{
 .nav{
     background-color: var(--naranja);
     border-radius: 8px 8px 0 0;
+    padding: 10px;
 }
 
+.nav-lista{
+    /* background-color: var(--naranja); */
+
+    /* list-style:  espara quitar el puntito de las listas; */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.nav-lista_item{
+    /* background-color: var(--naranja); */
+    flex-grow: 1;
+    text-align: center;
+    border-right: 2px solid var(--amarillo);
+    
+}
+
+.nav-link{
+    color: white;
+    /* background-color: var(--naranja); */
+    /* lo transforomo en elemento de bloque para que lazona de clic se agrande */
+    display: block;
+    /* quita el subrrayado alos link */
+    text-decoration: none;
+    /* negrita */
+    font-weight: bold;
+}
+
+.nav-form{
+    background-color: springgreen;
+}
