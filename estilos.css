@@ -6,6 +6,7 @@
     --negro: #000;
     --blanco: #FFF;
     --amarillo: rgb(255, 217, 0);
+    --espacio: 40px;
 
 
 }
@@ -58,6 +59,8 @@ body{
     background-color: var(--naranja);
     border-radius: 8px 8px 0 0;
     padding: 10px;
+    /* separo la barra de navegacion hacia abajo */
+    margin-bottom: var(--espacio);
 }
 
 .nav-lista{
@@ -92,3 +95,96 @@ body{
 .nav-form{
     background-color: springgreen;
 }
+
+/*
+
+        SLIDER DE IMAGENES
+
+*/
+
+.imagen{
+    text-align: center;
+    margin-bottom: var(--espacio);
+
+}
+
+/*
+
+PRINCIPAL
+
+*/
+
+.principal{
+    background-color: var(--blanco);
+    margin-bottom: var(--espacio);
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+}
+
+
+
+h2{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.productos{
+    background-color: var(--blanco);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    padding-right: 50px;
+}
+
+
+.lamparas{    
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 5px;
+}
+
+
+
+
+
+
+/*
+
+
+CATEGORIAS
+
+
+*/
+.categorias{
+    background-color: var(--blanco);
+    padding-left: 30px;
+}
+
+.categorias li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 10px; */
+    list-style: none;
+    border-bottom: 1px dashed gray;
+    /* border: 3px solid red; */
+}
+
+.lista{
+    padding-left: 10px;
+}
+
+.categorias a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--negro);
+    font-size: 17px;
+    
+
+}
+
+
