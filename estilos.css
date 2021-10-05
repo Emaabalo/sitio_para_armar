@@ -7,6 +7,8 @@
     --blanco: #FFF;
     --amarillo: rgb(255, 217, 0);
     --espacio: 40px;
+    --gris: rgba(184, 184, 184, 0.74);
+    
 
 
 }
@@ -188,3 +190,39 @@ CATEGORIAS
 }
 
 
+/*
+
+news
+
+*/
+
+.news{
+    display: flex;
+    background-image: linear-gradient(var(--blanco) 65%, var(--gris));
+    margin-bottom: var(--espacio);
+    margin-bottom: 250px;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--negro);      
+}
+
+.news-info{
+    padding-left: 40px;
+}
+.news-info p{
+    margin-left: 50px;
+}
+
+.news-form{   
+    padding-top: 10px;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.boton_form{
+    /* background-color: red; */
+    background: none;
+    border: none;
+    font-weight: bold;
+}
